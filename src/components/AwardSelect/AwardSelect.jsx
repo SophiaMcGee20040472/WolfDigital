@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import "./AwardSelect.css";
 
 const AwardSelect = ({
   groups,
@@ -47,34 +48,36 @@ const AwardSelect = ({
   return (
     <div
       ref={selectRef}
-      className="awards-filter__selector"
+      className="award-select"
     >
-      <span className="awards-filter__selector-label">
+      <span className="award-select__label">
         Currently viewing
       </span>
       <button
         type="button"
-        className={`awards-filter__trigger ${
-          isOpen ? "awards-filter__trigger--open" : ""
+        className={`award-select__trigger ${
+          isOpen ? "award-select__trigger--open" : ""
         }`}
         onClick={() => setIsOpen((open) => !open)}
         aria-expanded={isOpen}
         aria-haspopup="listbox"
       >
-        <span className="awards-filter__selected">
+        <span className="award-select__selected">
           {selected?.label ?? "All Awards"}
         </span>
       </button>
       {isOpen && (
         <div
-          className="awards-filter__panel"
+          className="award-select__panel"
           role="listbox"
         >
-          <div className="awards-filter__panel-header">
+          <div className="award-select__panel-header">
             <span>Select an award group</span>
-            <span>{groups.length - 1} groups</span>
+            <span>
+              {Math.max(groups.length - 1, 0)} groups
+            </span>
           </div>
-          <div className="awards-filter__options">
+          <div className="award-select__options">
             {groups.map(({ id, label }, index) => {
               const isSelected = id === selectedGroup;
               return (
@@ -83,17 +86,17 @@ const AwardSelect = ({
                   type="button"
                   role="option"
                   aria-selected={isSelected}
-                  className={`awards-filter__option ${
+                  className={`award-select__option ${
                     isSelected
-                      ? "awards-filter__option--selected"
+                      ? "award-select__option--selected"
                       : ""
                   }`}
                   onClick={() => handleSelect(id)}
                 >
-                  <span className="awards-filter__number">
+                  <span className="award-select__number">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <span className="awards-filter__option-name">
+                  <span className="award-select__option-name">
                     {label}
                   </span>
                 </button>
