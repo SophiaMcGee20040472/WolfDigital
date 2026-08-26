@@ -1,14 +1,14 @@
 import GlobalSearch from "../assets/globsearch.webp";
 import Europe from "../assets/europe.webp";
+import European from "../assets/europe1.png";
 import Digital from "../assets/digital.webp";
-import Klicks from "../assets/klicks.webp";
-import Paid from "../assets/paid.webp";
-import globalContent from "../assets/globalcontent.webp";
+import GlobeSearch from "../assets/2024.png";
 
 export const awards = [
   {
     id: "global-search-2025",
     year: 2025,
+    group: "Global Search Awards",
     title: "Global Search Awards",
     logo: GlobalSearch,
 
@@ -47,16 +47,13 @@ export const awards = [
   {
     id: "europe-search-2025",
     year: 2025,
+    group: "European Search Awards",
     title: "European Search Awards",
     logo: Europe,
 
     categories: [
       {
         name: "Best Use Of Search - Retail / Ecommerce (PPC) (Large)",
-        winner: "Winner",
-      },
-      {
-        name: "Best Use Of Search - Finance (PPC) (Large)",
         winner: "Winner",
       },
       {
@@ -72,6 +69,7 @@ export const awards = [
   {
     id: "digital-media-2025",
     year: 2025,
+    group: "Digital Media Awards",
     title: "Digital Media Awards",
     logo: Digital,
     categories: [
@@ -82,27 +80,64 @@ export const awards = [
     ],
   },
   {
-    id: "paid-media-2024",
+    id: "global-search-2024",
     year: 2024,
-    title: "European Paid Media Awards",
-    logo: Paid,
+    group: "Global Search Awards",
+    title: "Global Search Awards",
+    logo: GlobeSearch,
 
     categories: [
       {
-        name: "Best Use Of TikTok Ads",
+        name: "Best Use Of Search - Retail / eCommerce (PPC)",
         winner: "Winner",
       },
       {
-        name: "Best Use Of Video",
+        name: "Best Use Of Search - B2B (SEO)",
+        winner: "Winner",
+      },
+      {
+        name: "Best Local Campaign (SEO)",
+        winner: "Winner",
+      },
+      {
+        name: "Best Integrated Campaign",
+        winner: "Winner",
+      },
+      {
+        name: "Best Global Large Integrated Search Agency",
         winner: "Winner",
       },
     ],
   },
   {
-    id: "global-content-2024",
+    id: "europe-2024",
     year: 2024,
-    title: "Global Content Awards",
-    logo: globalContent,
+    group: "European Search Awards",
+    title: "European Search Awards",
+    logo: European,
+
+    categories: [
+      {
+        name: "Best Use of Search- B2C (PPC)",
+        winner: "Winner",
+      },
+      {
+        name: "Best Low Budget Campaign - SEO",
+        winner: "Winner",
+      },
+      {
+        name: "Best Use of Content Marketing",
+        winner: "Winner",
+      },
+    ],
+  },
+  {
+    id: "digital-media-2024",
+    year: 2024,
+    group: "Digital Media Awards",
+    title: "Digital Media Awards",
+    logo: Digital,
+
     categories: [
       {
         name: "Global Large Content Marketing Agency of the Year",
@@ -114,40 +149,6 @@ export const awards = [
       },
       {
         name: "Global Health Content Campaign",
-        winner: "Winner",
-      },
-      {
-        name: "CRM / Email Content Campaign",
-        winner: "Winner",
-      },
-      {
-        name: "Global Social Media Content Campaign",
-        winner: "Winner",
-      },
-      {
-        name: "Global Video Content Campaign",
-        winner: "Winner",
-      },
-      {
-        name: "Best Use of AI in Content",
-        winner: "Winner",
-      },
-    ],
-  },
-
-  {
-    id: "klick-2024",
-    year: 2024,
-    title: "The Klick Awards",
-    logo: Klicks,
-
-    categories: [
-      {
-        name: "Best Shopper Recapture Experience",
-        winner: "Winner",
-      },
-      {
-        name: "Most Advanced Use of Automation",
         winner: "Winner",
       },
     ],

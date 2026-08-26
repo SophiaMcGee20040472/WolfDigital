@@ -55,9 +55,7 @@
 .contact-wrapper {
   display: flex;
   align-items: center;
-
   flex-shrink: 0;
-
   margin-right: 160px;
 }
 
@@ -109,7 +107,6 @@
 
 .contact:hover .contact-arrow {
   opacity: 1;
-
   transform: translateY(-60%) translateX(0);
 }
 
@@ -172,7 +169,6 @@
   .nav a {
     font-size: 14px;
   }
-
 
   .contact-wrapper {
     margin-right: 0;
