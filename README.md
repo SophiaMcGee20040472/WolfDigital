@@ -18,6 +18,11 @@ The project uses **static/hardcoded data**, with no API, CMS or backend.
 - [My Approach](#my-approach)
 - [Technology Choices](#technology-choices)
 - [Features](#features)
+  - [Awards](#awards)
+  - [Award Group Filtering](#award-group-filtering)
+  - [Interactive Award Cards](#interactive-award-cards)
+  - [Responsive Navigation](#responsive-navigation)
+  - [Responsive Layout](#responsive-layout)
 - [Design Decisions](#design-decisions)
   - [Cards vs Rows](#cards-vs-rows)
   - [Going Beyond the Brief](#going-beyond-the-brief)
@@ -35,11 +40,28 @@ The project uses **static/hardcoded data**, with no API, CMS or backend.
   - [Mobile Award Filter](#mobile-award-filter)
   - [Mobile Navigation](#mobile-navigation)
 - [Component Structure](#component-structure)
+- [Components](#components)
+  - [AwardsCard](#awardscard)
+  - [AwardsFilter](#awardsfilter)
+  - [AwardSelect](#awardselect)
+  - [Heading](#heading)
+  - [Hero](#hero)
+  - [Menu](#menu)
+  - [Dark Mode](#dark-mode)
+  - [Footer](#footer)
 - [Data and Filtering](#data-and-filtering)
 - [HTML and CSS](#html-and-css)
 - [Accessibility](#accessibility)
 - [Getting Started](#getting-started)
+  - [Requirements](#requirements)
+  - [Clone the Repository](#clone-the-repository)
+  - [Install Dependencies](#install-dependencies)
+  - [Run the Development Server](#run-the-development-server)
 - [Available Scripts](#available-scripts)
+  - [Development](#development)
+  - [Production Build](#production-build)
+  - [Preview](#preview)
+  - [Lint](#lint)
 - [Project Structure](#project-structure)
 - [Future Improvements](#future-improvements)
 - [Original Brief](#original-brief)
@@ -51,7 +73,7 @@ The project uses **static/hardcoded data**, with no API, CMS or backend.
 # Live Demo
 
 **Live Site:**  
-Will add when deployed
+https://wolf-digital.vercel.app/
 
 **GitHub Repository:**  
 https://github.com/SophiaMcGee20040472/WolfDigital.git
@@ -311,21 +333,18 @@ I tried to keep the additional work relevant to the page rather than adding func
 
 ---
 
+
 ## Hover Interaction
 
-One part of the brief I wasn't completely sure about was:
+One part of the brief required the **hover interaction on the award groups** to be recreated.
 
-> "Recreate the hover interaction on award groups."
+I interpreted this as an opportunity to make the award cards feel interactive while keeping the interaction within the existing page rather than navigating to another view.
 
-I wasn't entirely sure which specific interaction the brief was referring to, or whether "hover interaction" meant the visual card state, the expanded content, or another interaction from the reference.
+The cards use visual interaction states to provide feedback when the user interacts with them, with the expanded state revealing additional award information and categories.
 
-So I interpreted this in my own way.
+I chose this approach because it keeps the interaction directly connected to the award being explored and allows the user to access additional information without leaving the page.
 
-I added interactive visual states to the award cards and created an expanded state where additional award information is revealed.
-
-The interaction allows the user to move from the initial award card to a more detailed state without navigating away from the page.
-
-I'm not sure whether this is exactly what was intended by that part of the brief, but it was my interpretation of the requirement and I felt it created a useful interaction for the user.
+The exact interaction in the reference left some room for interpretation, so I focused on reproducing the overall interactive behaviour while adapting it to the card-based layout I had created.
 
 <img width="936" height="404" alt="image" src="https://github.com/user-attachments/assets/4d6c5d18-4733-4dd4-89bf-65d00bd1def9" />
 
@@ -389,7 +408,7 @@ I wanted to include screenshots of the different states of the application rathe
 
 This demonstrates the responsive behaviour and the different interactions that were implemented.
 
-The screenshots below show both desktop and mobile states. I tried to keep the same hover colors. I might fix the green over on logo.
+The screenshots below show both desktop and mobile states, including the responsive layouts, filtering and interactive card states.
 
 <img width="291" height="438" alt="image" src="https://github.com/user-attachments/assets/8b976d87-e81e-4e7b-9b9a-a409151ae327" />
 
@@ -515,18 +534,12 @@ The main component structure is:
 App
 │
 ├── Hero
-│
 ├── Menu
-│
 ├── Heading
-│
-└── Awards
-    │
-    ├── AwardsFilter
-    │
-    └── AwardSelect
-          │
-          └── AwardsCard
+├── AwardsFilter
+├── AwardSelect
+├── AwardsCard
+└── Footer
 ```
 
 The project structure inside `src` is:
@@ -557,6 +570,10 @@ src/
 │   ├── AwardsFilter/
 │   │   ├── AwardsFilter.css
 │   │   └── AwardsFilter.jsx
+│   │
+│   ├── Footer/
+│   │   ├── Footer.css
+│   │   └── Footer.jsx
 │   │
 │   ├── Heading/
 │   │   ├── Heading.css
@@ -640,11 +657,42 @@ The desktop and mobile versions use the same component but behave differently de
 <img width="1255" height="79" alt="image" src="https://github.com/user-attachments/assets/d9439659-ebc9-497e-b683-8afbbc0bd0f8" />
 
 
+
+## Dark Mode
+
+I added dark mode after testing the site on mobile and realising it didn't look right when my phone was already using dark mode. 😂
+
+I take a lot of pride in how my work looks across different devices and settings. I genuinely enjoy going back and looking at things I've built, so I want to be happy with what I'm seeing every time I open the site.
+
+For me, dark mode wasn't just about making the colours technically work. I wanted it to still feel like the same considered design, with the layout, spacing, typography and colours all working properly.
+
+I kept the existing visual language by using a deep teal background, white typography and the existing green accents.
+
+If I'm going to keep looking at my work because I'm proud of it, I want it to look right. 😂
+
+I also tested it across different screen sizes to make sure everything still looked clean and readable on both desktop and mobile.
+
+<img width="710" height="444" alt="image" src="https://github.com/user-attachments/assets/72aedc4d-7502-4694-9fe6-e8c172964114" />
+<img width="711" height="446" alt="image" src="https://github.com/user-attachments/assets/a4bc4e4e-905e-465c-9730-c61a59cf8e52" />
+<img width="203" height="424" alt="image" src="https://github.com/user-attachments/assets/31424c39-c63d-4fa1-b8fb-e4fccc11ce00" />
+<img width="194" height="425" alt="image" src="https://github.com/user-attachments/assets/961498a3-0bbf-4881-a53f-f1a2d04df626" />
+<img width="194" height="416" alt="image" src="https://github.com/user-attachments/assets/e8729ea7-c896-4cfb-8016-7b1b754fbcfb" />
+<img width="704" height="298" alt="image" src="https://github.com/user-attachments/assets/9b920935-787f-4234-a8f2-c7e8d7be16f5" />
+
+
 ---
+
 ## `Footer`
 
-Last minute addition of a basic footer because every page should have a header and a footer.
-Would have put more thought into it but this is what it is.
+A small last-minute addition, because apparently I couldn't leave the page without one.
+
+It's intentionally simple and follows the same visual style as the rest of the page. It gives the page a proper ending without competing with the awards section.
+
+Was it strictly necessary for the brief? No.
+
+Did the page feel unfinished without it? Yes.
+
+So here we are.
 
 <img width="1352" height="141" alt="image" src="https://github.com/user-attachments/assets/9ec20bf8-93ec-4785-a38f-874fd65a9bc1" />
 
@@ -728,23 +776,58 @@ My wrist definitely noticed that decision by the end of the project. 😄
 
 # Accessibility
 
-Accessibility was considered throughout the implementation.
+Accessibility was something I considered throughout the build rather than leaving until the end.
 
-Some of the considerations include:
+I made a number of decisions to improve readability, performance and usability across different devices.
 
-- Semantic HTML
-- Buttons for interactive controls
-- Clear interactive states
-- Readable typography
-- Colour contrast
-- Responsive layouts
-- Touch-friendly controls
-- Mobile navigation
-- Clear visual hierarchy
+### Readability
 
-The aim was to make the interface straightforward to understand without requiring the user to learn how it works first.
+I paid particular attention to typography, font sizes and colour choices to make sure the content remained easy to read.
 
-<img width="342" height="112" alt="image" src="https://github.com/user-attachments/assets/23cd9c7f-ff80-4c8b-9570-556e5be19bb8" />
+I adjusted font sizes and spacing across different screen sizes so that text remained comfortable to read on both desktop and mobile.
+
+I also considered the contrast between the text and backgrounds when choosing colours, particularly when creating the dark mode version.
+
+### Images and Performance
+
+I compressed and optimised the images used throughout the site to reduce their file sizes and improve loading performance.
+
+This was particularly important for the larger hero imagery, where using unnecessarily large files could have affected the experience on mobile devices.
+
+I was particularly happy to achieve **100% across the board in the final Lighthouse results**. Performance was originally sitting at around **57%**, so getting it to 100% wasn't something that happened by accident.
+
+I looked into what was affecting the score and made changes to improve the site's performance, including compressing and optimising the images.
+
+Seeing that jump from 57% to 100% was really satisfying because it showed that the changes I made actually had a measurable impact.
+
+### Responsive Design
+
+I take a lot of pride in how my work looks across different devices. I genuinely enjoy going back and looking at things I've built, so I want to be happy with what I'm seeing every time I open the site. 😂
+
+I don't just want the site to technically work on mobile. I want the layout, spacing, typography and interactions to still feel intentional at different screen sizes.
+
+I tested the site across desktop and mobile to make sure everything felt like the same considered design rather than simply shrinking everything down.
+
+### Dark Mode
+
+I added dark mode after testing the site on mobile and realising it didn't look right when my phone was already using dark mode. 😂
+
+I wanted to make sure the page still looked intentional rather than just letting the colours do whatever they wanted.
+
+I kept the same visual language by using a deep teal background, white typography and the existing green accents.
+
+I also considered readability and contrast when adapting the design for dark mode.
+
+### Interaction
+
+I used clear visual states for interactive elements so that users receive feedback when interacting with the award cards, filtering and navigation.
+
+Overall, I wanted accessibility to be part of the design decisions rather than something added at the very end.
+
+I'm still learning about accessibility and there are always areas I could improve, but I tried to make conscious decisions throughout the build to make the site easier to read, navigate and use.
+
+<img width="399" height="98" alt="image" src="https://github.com/user-attachments/assets/96cda606-888a-4c9b-a27f-db540aeeff02" />
+
 
 ---
 
@@ -770,13 +853,13 @@ npm --version
 ## Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone git clone https://github.com/SophiaMcGee20040472/WolfDigital.git
 ```
 
 Navigate into the project:
 
 ```bash
-cd wolfdigital
+cd WolfDigital
 ```
 
 ---
@@ -875,7 +958,6 @@ If I continued developing the project, I would consider:
 - Adding component tests
 - Adding TypeScript
 - Further refining the mobile experience
-- Adding a footer
 - Creating a more complete navigation experience
 
 If this were being developed as a larger production application, I would also reconsider the technology stack and potentially introduce TypeScript, Next.js and a component library.
