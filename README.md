@@ -13,6 +13,7 @@ The project uses **static/hardcoded data**, with no API, CMS or backend.
 # Table of Contents
 
 - [Live Demo](#live-demo)
+- [Deployment](#deployment)
 - [Overview](#overview)
 - [The Brief](#the-brief)
 - [My Approach](#my-approach)
@@ -77,6 +78,16 @@ https://wolf-digital.vercel.app/
 
 **GitHub Repository:**  
 https://github.com/SophiaMcGee20040472/WolfDigital.git
+
+---
+
+# Deployment
+
+Once I was happy with the project locally, I deployed it to **Vercel**. Because the project uses static, hardcoded data with no APIs, CMS or backend, there was no need for environment variables or additional configuration. I simply imported the GitHub repository into Vercel and deployed the React + Vite application.
+
+I'm quite used to wrestling with **environment variables, API configuration and path locations**, so having a project where none of that was necessary was actually quite nice. 😂
+
+Before pushing it live, I created a production build and tested **accessibility, performance, responsiveness and potential bugs**, making improvements where needed. I was particularly pleased to improve the Lighthouse results from around **57% to 100% across the board** before deploying the final version.
 
 ---
 
@@ -999,7 +1010,7 @@ I probably spent considerably longer on the task than was necessary, but I genui
 
 I have missed coding, and this gave me the opportunity to build something for the brief **as well as something for myself**.
 
-My main goal wasn't to create a perfect copy of the reference. It was to demonstrate how I approach a design, how I break a page into React components, how I handle state and filtering, and how I make decisions when the brief doesn't specify every detail. I wouldn't have put the teal green hover on my cards but I did it because your site had teal green and I wanted to stay consistent even though it doesn't look right for my particular cards. So I ask that I am not penalized for these decisions.
+My main goal wasn't to create a perfect copy of the reference, but to demonstrate how I approach a design, break a page into React components, handle state and filtering, and make decisions when the brief leaves room for interpretation. I used the reference as a guide while bringing my own design choices into the implementation, keeping the visual language consistent throughout the page.
 
 There were definitely things I wasn't completely sure about particularly the exact meaning of the requested hover interaction so I've documented the decisions I made rather than pretending every choice was explicitly defined by the brief.
 
