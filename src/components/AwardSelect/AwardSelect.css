@@ -40,6 +40,7 @@
   transition:
     background-color 180ms ease,
     color 180ms ease,
+    border-color 180ms ease,
     box-shadow 180ms ease;
 }
 
@@ -49,7 +50,8 @@
 
 .award-select__trigger--open {
   background: #073B39;
-  color: rgb(112, 173, 130);
+  color: #70AD82;
+  border-color: #073B39;
   box-shadow: 0 8px 24px rgba(0, 72, 88, 0.15);
 }
 
@@ -179,6 +181,67 @@
   font-weight: 600;
   line-height: 1.25;
   text-align: left;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .award-select__label {
+    color: #9dc5c3;
+  }
+
+  .award-select__trigger {
+    border-color: #70AD82;
+    background: #073B39;
+    color: #ffffff;
+  }
+
+  .award-select__trigger:hover {
+    background: #14534f;
+    color: #70AD82;
+  }
+
+  .award-select__trigger--open {
+    background: #70AD82;
+    color: #073B39;
+    border-color: #70AD82;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  }
+
+  .award-select__panel {
+    border-color: #70AD82;
+    background: #073B39;
+    box-shadow:
+      0 20px 50px rgba(0, 0, 0, 0.3),
+      0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .award-select__panel-header {
+    border-bottom-color: #285d58;
+    color: #9dc5c3;
+  }
+
+  .award-select__option {
+    color: #ffffff;
+  }
+
+  .award-select__option:hover {
+    background: #14534f;
+    color: #70AD82;
+  }
+
+  .award-select__option--selected,
+  .award-select__option--selected:hover {
+    background: #70AD82;
+    color: #073B39;
+  }
+
+  .award-select__number {
+    color: #9dc5c3;
+  }
+
+  .award-select__option--selected .award-select__number {
+    color: #073B39;
+  }
 }
 
 @media (max-width: 700px) {

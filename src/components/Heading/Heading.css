@@ -4,10 +4,10 @@
   margin: 0;
   padding: 2rem 1rem 2rem;
   box-sizing: border-box;
-  color: #073B39;
+  color: var(--brand);
   font-size: clamp(1rem, 4vw, 2.3rem);
   line-height: 1.5;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 800;
   text-align: left;
 }

@@ -5,6 +5,7 @@
   margin-bottom: 24px;
   border-top: 1px solid #dce5e6;
   border-bottom: 1px solid #dce5e6;
+  background: #ffffff;
   text-align: left;
 }
 
@@ -46,6 +47,27 @@
 
 .awards-filter__heading span {
   color: teal;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .awards-filter {
+    background: #073B39;
+    border-top-color: #285d58;
+    border-bottom-color: #285d58;
+  }
+
+  .awards-filter__eyebrow {
+    color: #9dc5c3;
+  }
+
+  .awards-filter__heading {
+    color: #ffffff;
+  }
+
+  .awards-filter__heading span {
+    color: #70AD82;
+  }
 }
 
 @media (max-width: 700px) {
