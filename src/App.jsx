@@ -1,11 +1,10 @@
 import { useState } from "react";
-
 import Menu from "./components/Menu/Menu";
 import Hero from "./components/Hero/Hero";
 import Heading from "./components/Heading/Heading";
 import CompanyCard from "./components/AwardsCard/AwardsCard";
 import AwardsFilter from "./components/AwardsFilter/AwardsFilter";
-
+import Footer from "./components/Footer/Footer";
 import { awards } from "./data/mockdata";
 
 function App() {
@@ -15,9 +14,7 @@ function App() {
       id: "all",
       label: "All Awards",
     },
-    ...[
-      ...new Set(awards.map((award) => award.group)),
-    ].map((group) => ({
+    ...[...new Set(awards.map((award) => award.group))].map((group) => ({
       id: group,
       label: group,
     })),
@@ -25,9 +22,7 @@ function App() {
   const filteredAwards =
     selectedGroup === "all"
       ? awards
-      : awards.filter(
-          (award) => award.group === selectedGroup
-        );
+      : awards.filter((award) => award.group === selectedGroup);
   return (
     <>
       <Hero />
@@ -48,6 +43,7 @@ function App() {
           ))}
         </div>
       </main>
+      <Footer />
     </>
   );
 }
