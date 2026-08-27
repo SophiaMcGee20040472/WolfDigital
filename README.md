@@ -199,11 +199,12 @@ Users can expand an award group to reveal additional award categories.
 
 The card changes visually when interacted with, allowing the user to understand that the item is interactive.
 
-<img width="910" height="386" alt="image" src="https://github.com/user-attachments/assets/c58aa5b0-8f6c-441b-a8d4-1af159bbab9a" />
+<img width="936" height="404" alt="image" src="https://github.com/user-attachments/assets/4d6c5d18-4733-4dd4-89bf-65d00bd1def9" />
 
-<img width="472" height="591" alt="image" src="https://github.com/user-attachments/assets/2e123539-e6ce-49af-934c-4032469dcb0a" />
+<img width="940" height="409" alt="image" src="https://github.com/user-attachments/assets/ed00ebd3-310c-449e-8405-5a2be4b9d2b1" />
 
-<img width="462" height="594" alt="image" src="https://github.com/user-attachments/assets/c7c8493f-11e2-4f74-90d3-035c8cdc72e8" />
+<img width="939" height="604" alt="image" src="https://github.com/user-attachments/assets/5ff9f636-ef1b-4662-95ee-22d6848e26f8" />
+
 
 ---
 
@@ -221,7 +222,9 @@ The mobile menu includes:
 - Contact Us
 
 <img width="1351" height="436" alt="image" src="https://github.com/user-attachments/assets/1773e734-b0d6-4548-a864-4350c44e9082" />
+
 <img width="288" height="513" alt="image" src="https://github.com/user-attachments/assets/8ed957dd-67ff-48c2-bce5-2cde2f5b354c" />
+
 <img width="288" height="512" alt="image" src="https://github.com/user-attachments/assets/6b3a73f0-cd82-4232-8399-c0a132ddbd0d" />
 
 
@@ -302,7 +305,8 @@ I tried to keep the additional work relevant to the page rather than adding func
 
 <img width="1351" height="602" alt="image" src="https://github.com/user-attachments/assets/9341a9e2-d721-4df0-9ce6-141098b4c1e1" />
 <img width="1351" height="552" alt="image" src="https://github.com/user-attachments/assets/985e6ef6-71c4-460f-b355-052e096bb281" />
-<img width="1354" height="590" alt="image" src="https://github.com/user-attachments/assets/1e885ee7-69d4-4103-888a-56837f678904" />
+<img width="1355" height="606" alt="image" src="https://github.com/user-attachments/assets/6fabdd80-c228-4a64-a893-aa4509cb2913" />
+
 
 
 ---
@@ -323,11 +327,11 @@ The interaction allows the user to move from the initial award card to a more de
 
 I'm not sure whether this is exactly what was intended by that part of the brief, but it was my interpretation of the requirement and I felt it created a useful interaction for the user.
 
-<img width="910" height="386" alt="image" src="https://github.com/user-attachments/assets/c58aa5b0-8f6c-441b-a8d4-1af159bbab9a" />
+<img width="936" height="404" alt="image" src="https://github.com/user-attachments/assets/4d6c5d18-4733-4dd4-89bf-65d00bd1def9" />
 
-<img width="472" height="591" alt="image" src="https://github.com/user-attachments/assets/2e123539-e6ce-49af-934c-4032469dcb0a" />
+<img width="940" height="409" alt="image" src="https://github.com/user-attachments/assets/ed00ebd3-310c-449e-8405-5a2be4b9d2b1" />
 
-<img width="462" height="594" alt="image" src="https://github.com/user-attachments/assets/c7c8493f-11e2-4f74-90d3-035c8cdc72e8" />
+<img width="939" height="604" alt="image" src="https://github.com/user-attachments/assets/5ff9f636-ef1b-4662-95ee-22d6848e26f8" />
 
 ---
 
@@ -425,7 +429,8 @@ The expanded state reveals additional award categories within the card.
 
 This keeps the additional information within the context of the award rather than requiring a separate page.
 
-<img width="286" height="393" alt="image" src="https://github.com/user-attachments/assets/07fe1cc8-6821-42ac-a066-c50c138cdbb5" />
+<img width="307" height="545" alt="image" src="https://github.com/user-attachments/assets/0cc8cecc-2805-4227-a7c4-c8964c0a406a" />
+
 
 ---
 
@@ -436,7 +441,7 @@ The interaction can also be demonstrated with multiple award groups expanded.
 This was something I considered when thinking about how the state should be managed within the card components.
 
 
-<img width="1355" height="544" alt="image" src="https://github.com/user-attachments/assets/a034f9cb-d9b5-4e6e-8025-63eb743a373a" />
+<img width="1355" height="606" alt="image" src="https://github.com/user-attachments/assets/6fabdd80-c228-4a64-a893-aa4509cb2913" />
 
 
 ---
@@ -447,10 +452,12 @@ The filter allows the user to select an individual award group.
 
 For example, selecting **Global Search Awards** shows the relevant awards from both 2024 and 2025.
 
+<img width="1346" height="501" alt="image" src="https://github.com/user-attachments/assets/e29d6a70-addf-44a2-8ac0-72a340167abe" />
+<img width="1339" height="507" alt="image" src="https://github.com/user-attachments/assets/2296b46f-71b9-4fd8-8028-b90f0619a08d" />
+<img width="310" height="173" alt="image" src="https://github.com/user-attachments/assets/e134d6b5-c9af-4738-a957-61fba57a8acb" />
+<img width="1354" height="125" alt="image" src="https://github.com/user-attachments/assets/34843854-9b43-4dcd-a7aa-b39ee9f8a4bb" />
 <img width="291" height="438" alt="image" src="https://github.com/user-attachments/assets/8b976d87-e81e-4e7b-9b9a-a409151ae327" />
-
 <img width="1339" height="512" alt="image" src="https://github.com/user-attachments/assets/04459436-fa75-4df5-8e9e-7ad091201f5b" />
-
 <img width="870" height="444" alt="image" src="https://github.com/user-attachments/assets/91bf4998-5ce6-4f7f-a97b-410799c6e1dd" />
 
 ---
@@ -481,11 +488,9 @@ The award group selector changes into a mobile-friendly dropdown interface.
 
 The available groups are displayed within the expanded selector.
 
-<img width="217" height="90" alt="image" src="https://github.com/user-attachments/assets/3481ca8c-0a4b-478b-9567-07a464151d9c" />
+<img width="310" height="170" alt="image" src="https://github.com/user-attachments/assets/0145ef92-a493-4382-88f4-e374bf9f48bb" />
 
-<img width="205" height="132" alt="image" src="https://github.com/user-attachments/assets/817cd228-9311-4d48-b9db-39bd0fb5cb3d" />
-
-
+<img width="302" height="391" alt="image" src="https://github.com/user-attachments/assets/affd4d9c-02fd-4b6e-89c3-a990c12d8e3f" />
 
 
 ---
@@ -633,6 +638,18 @@ Handles the navigation and mobile menu.
 The desktop and mobile versions use the same component but behave differently depending on the viewport and menu state.
 
 <img width="1255" height="79" alt="image" src="https://github.com/user-attachments/assets/d9439659-ebc9-497e-b683-8afbbc0bd0f8" />
+
+
+---
+## `Footer`
+
+Last minute addition of a basic footer because every page should have a header and a footer.
+Would have put more thought into it but this is what it is.
+
+<img width="1352" height="141" alt="image" src="https://github.com/user-attachments/assets/9ec20bf8-93ec-4785-a38f-874fd65a9bc1" />
+
+<img width="306" height="409" alt="image" src="https://github.com/user-attachments/assets/30632931-4829-45b5-a6ac-0d5907d83288" />
+
 
 
 ---
